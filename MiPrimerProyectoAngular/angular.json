@@ -6,7 +6,7 @@
   },
   "newProjectRoot": "projects",
   "projects": {
-    "mi-primer-proyecto-angular": {
+    "MiPrimerProyectoAngular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -29,9 +29,8 @@
                 "input": "public"
               }
             ],
-            "styles": [
-              "src/styles.scss"
-            ]
+            "styles": ["src/styles.scss"],
+            "polyfills": ["@angular/localize/init"]
           },
           "configurations": {
             "production": {
@@ -61,10 +60,10 @@
           "builder": "@angular/build:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "mi-primer-proyecto-angular:build:production"
+              "buildTarget": "MiPrimerProyectoAngular:build:production"
             },
             "development": {
-              "buildTarget": "mi-primer-proyecto-angular:build:development"
+              "buildTarget": "MiPrimerProyectoAngular:build:development"
             }
           },
           "defaultConfiguration": "development"
