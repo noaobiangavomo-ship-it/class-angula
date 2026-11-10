@@ -1,0 +1,40 @@
+<div class="py-3 px-3">
+
+  <div class="mb-3">
+    <button type="button" class="btn btn-dark d-flex align-items-center gap-2" routerLink="/app/control-panel">
+      <i class="bi bi-chevron-left"></i> <span>Volver</span>
+    </button>
+  </div>
+  
+
+  <div class="container mt-3">
+    
+    <table class="table table-hover table-striped">
+      <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Apellidos</th>
+        <th scope="col">Curso</th>
+      </tr>
+      </thead>
+      <tbody>
+       // @for (i of usuarios; let j = $index; track i+j){
+         //  <p> {{i}} </p>
+        //}
+        
+        @for(usuario of usuarios; track usuario.id){
+          <tr>
+            <th scope="row">{{usuario.id}}</th>
+            <td>{{usuario.nombre}}</td>
+            <td>{{usuario.apellidos}}</td>
+            <td>{{usuario.curso}}</td>
+          </tr>
+        }
+
+  
+      </tbody>
+    </table>
+  </div>
+
+</div>
