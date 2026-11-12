@@ -1,7 +1,6 @@
 import { Component } from '@angular/core';
 import { RouterLink } from '@angular/router';
 
-
 interface UsuariosInterface {
   id: number;
   nombre: string;
@@ -40,10 +39,10 @@ export class Perfil {
   * */
 
   usuarios: UsuariosType[] = [
-    {id: 1, nombre: "Concepcion Ayi", apellidos: "Obiang Avomo", curso: "2", grado: "DAM" },
-    {id: 2, nombre: "Ruth Obono", apellidos: "Obiang Avomo", curso: "Segundo" },
-    {id: 3, nombre: "Ignacio Esono" , apellidos: "Obiang Avomo", curso: "Primero", grado: "DAM" },
-    {id: 4, nombre: "Filomena Mokuy", apellidos: "Obiang Nguema", curso: "Primero", grado: "DAM" },
+    {id: 1, nombre: "Camilo", apellidos: "Quiroz", curso: "Segundo", grado: "DAW" },
+    {id: 2, nombre: "Juan", apellidos: "Muñoz", curso: "Segundo" },
+    {id: 3, nombre: "Pepe", apellidos: "Perez", curso: "Primero", grado: "DAM" },
+    {id: 4, nombre: "Camilo", apellidos: "Qz", curso: "Primero", grado: "DAM" },
   ];
 
 
